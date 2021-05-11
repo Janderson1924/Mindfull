@@ -10,8 +10,8 @@ const Home = (props) => {
   return (
     <div className="App">
       <MenuAppBar />
-     {/* <Moods />  */}
-     <Resource /> 
+     <Moods /> 
+     {/* <Resource />  */}
       {/* <Login /> */}
       {/* <Register /> */}
       {/* <UserProfile /> */}

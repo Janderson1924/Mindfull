@@ -1,6 +1,18 @@
 import React from "react";
 
 const Moods = (props) => {
+  let Parser = require('rss-parser');
+  let parser = new Parser();
+
+  (async () => {
+    let feed = await parser.parseURL('https://cors-anywhere.herokuapp.com/https://www.goodnewsnetwork.org/category/news/inspiring/feed/');
+  
+    feed.items.slice(-1).forEach(item => {
+      let titleLink = (item.title + ': ' + item.link);
+      console.log(titleLink);
+    });
+  })();
+
   return (
     <article className="MoodsPage">
       <section className="Moods">
