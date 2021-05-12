@@ -1,4 +1,5 @@
-import React from 'react';
+import React, { useState, useEffect } from 'react';
+import axios from 'axios';
 import MenuAppBar from './navbar';
 import Login from './login';
 import Register from './register';
@@ -7,11 +8,27 @@ import Moods from './moods';
 import Resource from './resource';
 
 const Home = (props) => {
+
+
+  const [moods, setMoods] = useState({});
+
+  const handleClick = (e) => {
+    e.preventDefault();
+    setMoods({
+      category: e.target.value
+    });
+  };
+
+  useEffect(() => {
+
+  })
+
   return (
     <div className="App">
       <MenuAppBar />
-     <Moods /> 
-     {/* <Resource />  */}
+      
+     <Moods handleClick={handleClick}/> 
+     <Resource category={moods}/> 
       {/* <Login /> */}
       {/* <Register /> */}
       {/* <UserProfile /> */}

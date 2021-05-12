@@ -1,44 +1,35 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
+import axios from 'axios';
 
 const Resource = (props) => {
+  const category = props.category.category
+  const [resources, setResources] = useState(null);
+  const url = `http://localhost:8080/api/resources/moods/${category}`
+
+
+  const fetchResources = async () => {
+    const response = await axios.get(url);
+    setResources(response.data)
+  }
+
+  useEffect(() => {
+    fetchResources();
+  }, [category])
+
   return (
     
     <div className="Resources">
-       <script src="https://kit.fontawesome.com/03a60bf669.js" crossorigin="anonymous"></script>
-       <section className="ResourceHeader">
-      <h1>Depression</h1>
-  
-      </section>
-      <section className="ResourceBox">
-      <h4>Depression - Signs & Symptoms</h4>
-      <h6>Depression</h6>
-   
-      <h5>InfoGraphic - Depression Signs/Symptoms</h5>
-   
-      <a href="https://au.reachout.com/-/media/young-people/images/image-library/depr_infographic_dontsee_fb.jpg?h=850&w=850&la=en&hash=8B89352F1259E85ED3141FA2390BE4CE8B24E9F8" target="_blank" rel="noopener noreferrer">Find Out More</a>
-      <i class="far fa-heart"></i>
-      </section>
-      <section className="ResourceBox">
-      <h4>Depression - Signs & Symptoms</h4>
-      <h6>Depression</h6>
-      <h5>InfoGraphic - Depression Signs/Symptoms</h5>
-   
-      <a href="https://au.reachout.com/-/media/young-people/images/image-library/depr_infographic_dontsee_fb.jpg?h=850&w=850&la=en&hash=8B89352F1259E85ED3141FA2390BE4CE8B24E9F8" target="_blank" rel="noopener noreferrer">Find Out More</a>
-      </section>
-      <section className="ResourceBox">
-      <h4>Depression - Signs & Symptoms</h4>
-      <h6>Depression</h6>
-      <h5>InfoGraphic - Depression Signs/Symptoms</h5>
-   
-      <a href="https://au.reachout.com/-/media/young-people/images/image-library/depr_infographic_dontsee_fb.jpg?h=850&w=850&la=en&hash=8B89352F1259E85ED3141FA2390BE4CE8B24E9F8" target="_blank" rel="noopener noreferrer">Find Out More</a>
-      </section>
-      <section className="ResourceBox">
-      <h4>Depression - Signs & Symptoms</h4>
-      <h6>Depression</h6>
-      <h5>InfoGraphic - Depression Signs/Symptoms</h5>
-   
-      <a href="https://au.reachout.com/-/media/young-people/images/image-library/depr_infographic_dontsee_fb.jpg?h=850&w=850&la=en&hash=8B89352F1259E85ED3141FA2390BE4CE8B24E9F8" target="_blank" rel="noopener noreferrer">Find Out More</a>
-      </section>
+      <h1>Resources</h1>
+      {resources && resources.map((resource) => {
+        return (
+          <div className="resource" key={resource.id}>
+            <h3>{resource.title}</h3>
+            <h3>{resource.category}</h3>
+            <h3>{resource.link}</h3>
+            <h3>{resource.content}</h3>
+          </div>
+        )
+      })}
     </div>
   );
 };

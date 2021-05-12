@@ -1,28 +1,28 @@
-import React from "react";
+import axios from "axios";
+import React, { useState, setState, useEffect } from "react";
 
 const Moods = (props) => {
-  
   return (
     <article className="MoodsPage">
       <section className="Moods">
       <div className="MoodsTop">
         <div className="MoodBox">
         <input type="image" src={require("../images/newPanda.png")} alt="PandaImage"className="Mood" width="85%" />
-      <h3>Depressed</h3>
+      <button value="Depressed" onClick={props.handleClick}>Depressed</button>
       </div>
       <div className="MoodBox">
       <input type="image" src={require("../images/newPanda.png")} alt="PandaImage"className="Mood" width="85%" />
-      <h3>Anxious</h3>
+      <button value="Anxious" onClick={props.handleClick}>Anxious</button>
       </div>
       </div>
       <div className="MoodsBottom">
       <div className="MoodBox">
       <input type="image" src={require("../images/newPanda.png")} alt="PandaImage" className="Mood" width="85%" />
-      <h3>Angry</h3>
+      <button value="Angry" onClick={props.handleClick}>Angry</button>
       </div>
       <div className="MoodBox">
       <input type="image" src={require("../images/newPanda.png")} alt="PandaImage" className="Mood" width="85%" />
-      <h3>Scared</h3>
+      <button value="Scared" onClick={props.handleClick}>Scared</button>
       </div>
       </div>
       </section>
