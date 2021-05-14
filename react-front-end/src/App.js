@@ -10,7 +10,7 @@ import Register from "./components/register";
 import UserProfile from "./components/user_profile";
 import MeditationAnimation from "./components/meditation_animation";
 
-const Parser = require('rss-parser');
+const Parser = require("rss-parser");
 const parser = new Parser();
 
 class App extends Component {
@@ -18,18 +18,23 @@ class App extends Component {
     super(props);
     this.state = {
       // message: 'Click the button to load data!'
-      feed: []
-    }
+      feed: [],
+    };
   }
 
   componentDidMount() {
-    parser.parseURL('https://cors-anywhere.herokuapp.com/https://www.goodnewsnetwork.org/category/news/inspiring/feed/')
-    .then(res => {
-      this.setState({ feed:res.items.map(item => {
-        return [item.title, item.link]
-      })});
-    });
-  };
+    parser
+      .parseURL(
+        "https://cors-anywhere.herokuapp.com/https://www.goodnewsnetwork.org/category/news/inspiring/feed/"
+      )
+      .then((res) => {
+        this.setState({
+          feed: res.items.map((item) => {
+            return [item.title, item.link];
+          }),
+        });
+      });
+  }
 
   //this now fetches the user info and posts for user #1 Michael Scott
   fetchDataUser1 = () => {
@@ -47,8 +52,7 @@ class App extends Component {
       .catch((err) => {
         console.log("Error", err);
       });
-    };
- 
+  };
 
   // axios.post('/login')
   // .then((response) => {
@@ -60,11 +64,11 @@ class App extends Component {
       <Router>
         <Switch>
           <Route exact path="/">
-          {/* {this.state.feed[0] &&<Home newsArticle={this.state.feed[0]}/>} */}
             <Home />
           </Route>
           <Route exact path="/moods">
-            <Moods />
+            {this.state.feed[0] && <Moods newsArticle={this.state.feed[0]} />}
+            {/* <Moods /> */}
           </Route>
           <Route path="/moods/:category">
             <Resource />
