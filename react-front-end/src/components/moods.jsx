@@ -24,7 +24,7 @@ const Moods = (props) => {
             <input
               className="PandaImage"
               type="image"
-              src={require("../images/Depressed.png")}
+              src={require("../images/DepressedBack.png")}
               alt="DepressedPanda"
             />           
           </div>
@@ -39,7 +39,7 @@ const Moods = (props) => {
             <input
               className="PandaImage"
               type="image"
-              src={require("../images/Anxious.png")}
+              src={require("../images/AnxiousBack.png")}
               alt="AnxiousPanda"
             />
           </div>
@@ -50,9 +50,10 @@ const Moods = (props) => {
             <input
               className="PandaImage"
               type="image"
-              src={require("../images/Angry.png")}
+              src={require("../images/AngryBack.png")}
               alt="AngryPanda"
-            />          
+            />    
+            <div className="circle-one"></div>      
           </div>
           <div className="SingleMood">
           <button
@@ -65,7 +66,7 @@ const Moods = (props) => {
             <input
               className="PandaImage"
               type="image"
-              src={require("../images/Scared.png")}
+              src={require("../images/ScaredBack.png")}
               alt="ScaredPanda"
             />
           </div>
