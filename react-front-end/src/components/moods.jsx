@@ -15,26 +15,11 @@ const Moods = (props) => {
         <section className="MoodsCard">
           <div className="SingleMood">
           <button
-              value="Depressed"
-              onClick={handleClick}
-              className="gradient-button gradient-button-1"
-            >
-              Depressed
-            </button>
-            <input
-              className="PandaImage"
-              type="image"
-              src={require("../images/DepressedBack.png")}
-              alt="DepressedPanda"
-            />           
-          </div>
-          <div className="SingleMood">
-          <button
               value="Anxious"
               onClick={handleClick}
               className="gradient-button gradient-button-2"
             >
-              Anxious
+              anxious
             </button>
             <input
               className="PandaImage"
@@ -45,7 +30,7 @@ const Moods = (props) => {
           </div>
           <div className="SingleMood">
           <button value="Angry" onClick={handleClick} className="gradient-button gradient-button-3">
-              Angry
+              angry
             </button>
             <input
               className="PandaImage"
@@ -53,7 +38,6 @@ const Moods = (props) => {
               src={require("../images/AngryBack.png")}
               alt="AngryPanda"
             />    
-            <div className="circle-one"></div>      
           </div>
           <div className="SingleMood">
           <button
@@ -61,7 +45,7 @@ const Moods = (props) => {
               onClick={handleClick}
               className="gradient-button gradient-button-4"
             >
-              Scared
+              scared
             </button>
             <input
               className="PandaImage"
@@ -70,7 +54,23 @@ const Moods = (props) => {
               alt="ScaredPanda"
             />
           </div>
+          <div className="SingleMood">
+          <button
+              value="Depressed"
+              onClick={handleClick}
+              className="gradient-button gradient-button-1"
+            >
+            depressed
+            </button>
+            <input
+              className="PandaImage"
+              type="image"
+              src={require("../images/DepressedBack.png")}
+              alt="DepressedPanda"
+            />           
+          </div>
         </section>
+        <hr />
         <section className="ResourceButtons">
           <p>More Resources</p>
           <a href={props.newsArticle[1]} target="_blank"><p>Inspiring Articles..</p>
