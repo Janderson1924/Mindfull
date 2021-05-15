@@ -72,11 +72,14 @@ const Moods = (props) => {
         </section>
         <hr />
         <section className="ResourceButtons">
-          <p>More Resources</p>
+          <h2>More Resources</h2>
+          <div className="TopButton">
           <a href={props.newsArticle[1]} target="_blank"><p>Inspiring Articles..</p>
-            {props.newsArticle[0]}
+            <p>{props.newsArticle[0]}</p>
           </a>
+          </div>
           <div className="CenterButtons">
+            <div className="CBL">
             <a
               href="https://www.betterhelp.com/helpme/?utm_source=AdWords&utm_medium=Search_PPC_c&utm_term=betterhelp_e&utm_content=113425365251&network=g&placement=&target=&matchtype=e&utm_campaign=10969405372&ad_type=text&adposition=&gclid=Cj0KCQjws-OEBhCkARIsAPhOkIZjT-gD9dfHaAXRWFPjDRtLjjcQPLfVxiUrsLcsDJOAQZwFgRjkqLoaAmt1EALw_wcB&not_found=1&gor=helpme"
               target="_blank"
@@ -84,6 +87,8 @@ const Moods = (props) => {
             >
               BetterHelp
             </a>
+            </div>
+            <div className="CBR">
             <a
               href="https://www.goodnewsnetwork.org/"
               target="_blank"
@@ -91,10 +96,13 @@ const Moods = (props) => {
             >
               GoodNewsNetwork
             </a>
+            </div>
           </div>
+          <div className="BottomButton">
           <a href="/meditation" rel="noopener noreferrer">
             Meditate With Hiroki
           </a>
+          </div>
         </section>
       </article>
     </>

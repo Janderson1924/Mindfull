@@ -33,8 +33,8 @@ export default function ButtonAppBar() {
                 <img
                   src={require("../images/newPanda.png")}
                   alt="Panda"
-                  height="30em"
-                  width="40em"
+                  height="40em"
+                  width="45em"
                 />
               </a>
             </Button>
