@@ -12,84 +12,89 @@ const Moods = (props) => {
     <>
       <MenuAppBar />
       <article className="MoodsPage">
-        <section className="Moods">
-          <div className="MoodsTop">
-            <div className="MoodBox">
-              <input
-                value="Depressed"
-                onClick={handleClick}
-                type="image"
-                src={require("../images/newPanda.png")}
-                alt="PandaImage"
-                className="Mood"
-              />
-              <h2>Depressed</h2>
-            </div>
-            <div className="MoodBox">
-              <input
-                value="Anxious"
-                onClick={handleClick}
-                type="image"
-                src={require("../images/newPanda.png")}
-                alt="PandaImage"
-                className="Mood"
-              />
-              <h2>Anxious</h2>
-            </div>
+        <section className="MoodsCard">
+          <div className="SingleMood">
+            <input
+              className="PandaImage"
+              type="image"
+              src={require("../images/newPanda.png")}
+              alt="DepressedPanda"
+            />
+            <button
+              value="Depressed"
+              onClick={handleClick}
+              className="DepressedButton"
+            >
+              Depressed
+            </button>
           </div>
-          <div className="MoodsBottom">
-            <div className="MoodBox">
-              <input
-                value="Angry"
-                onClick={handleClick}
-                type="image"
-                src={require("../images/newPanda.png")}
-                alt="PandaImage"
-                className="Mood"
-              />
-
-              <h2>Angry</h2>
-            </div>
-            <div className="MoodBox">
-              <input
-                value="Scared"
-                onClick={handleClick}
-                type="image"
-                src={require("../images/newPanda.png")}
-                alt="PandaImage"
-                className="Mood"
-              />
-              <h2>Scared</h2>
-            </div>
+          <div className="SingleMood">
+            <input
+              className="PandaImage"
+              type="image"
+              src={require("../images/newPanda.png")}
+              alt="AnxiousPanda"
+            />
+            <button
+              value="Anxious"
+              onClick={handleClick}
+              className="AnxiousButton"
+            >
+              Anxious
+            </button>
+          </div>
+          <div className="SingleMood">
+            <input
+              className="PandaImage"
+              type="image"
+              src={require("../images/newPanda.png")}
+              alt="AngryPanda"
+            />
+            <button value="Angry" onClick={handleClick} className="AngryButton">
+              Angry
+            </button>
+          </div>
+          <div className="SingleMood">
+            <input
+              className="PandaImage"
+              type="image"
+              src={require("../images/newPanda.png")}
+              alt="ScaredPanda"
+            />
+            <button
+              value="Scared"
+              onClick={handleClick}
+              className="ScaredButton"
+            >
+              Scared
+            </button>
           </div>
         </section>
-        <hr />
-        <div className="MoreResources">
-          <h3>
-            More Resources<hr></hr>
-          </h3>
-          <p>Inspiring Articles..</p>
-          <a href={props.newsArticle[1]} target="_blank">
+        <section className="ResourceButtons">
+          <p>More Resources</p>
+          <a href={props.newsArticle[1]} target="_blank"><p>Inspiring Articles..</p>
             {props.newsArticle[0]}
           </a>
-          <a
-            href="https://www.betterhelp.com/helpme/?utm_source=AdWords&utm_medium=Search_PPC_c&utm_term=betterhelp_e&utm_content=113425365251&network=g&placement=&target=&matchtype=e&utm_campaign=10969405372&ad_type=text&adposition=&gclid=Cj0KCQjws-OEBhCkARIsAPhOkIZjT-gD9dfHaAXRWFPjDRtLjjcQPLfVxiUrsLcsDJOAQZwFgRjkqLoaAmt1EALw_wcB&not_found=1&gor=helpme"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            BetterHelp
-          </a>
-          <a
-            href="https://www.goodnewsnetwork.org/"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            GoodNewsNetwork
-          </a>
+          <div className="CenterButtons">
+            <a
+              href="https://www.betterhelp.com/helpme/?utm_source=AdWords&utm_medium=Search_PPC_c&utm_term=betterhelp_e&utm_content=113425365251&network=g&placement=&target=&matchtype=e&utm_campaign=10969405372&ad_type=text&adposition=&gclid=Cj0KCQjws-OEBhCkARIsAPhOkIZjT-gD9dfHaAXRWFPjDRtLjjcQPLfVxiUrsLcsDJOAQZwFgRjkqLoaAmt1EALw_wcB&not_found=1&gor=helpme"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              BetterHelp
+            </a>
+            <a
+              href="https://www.goodnewsnetwork.org/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              GoodNewsNetwork
+            </a>
+          </div>
           <a href="/meditation" rel="noopener noreferrer">
             Meditate With Hiroki
           </a>
-        </div>
+        </section>
       </article>
     </>
   );

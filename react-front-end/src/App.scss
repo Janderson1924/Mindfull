@@ -9,46 +9,29 @@ body {
 
   // Home Page
   .MoodsPage {
-    display: flex;
-    flex-direction: column;
-    margin-top: 40px;
 
-    .Moods {
-      display: flex;
-      flex-direction: column;
-      width: 80%;
-    }
+    .MoodsCard {
 
-    .MoodsTop {
-      display: flex;
-      justify-content: center;
-      margin-top: 80px;
-      margin-bottom: 30px;
-    }
+      .SingleMood{
+      
+        .PandaImage{
 
-    .MoodsBottom {
-      display: flex;
-      justify-content: center;
-      margin-bottom: 50px;
-    }
+          .DepressedButton{
 
-    .MoodBox {
-      padding: 20px;
-      height: 100px;
-      width: 100px;
-    }
+          }
+          .AnxiousButton{
 
-    .Mood {
-      width: 190px;
-      height: 150px;
-    }
+          }
+          .AngryButton{
 
-    h2 {
-      margin-top: -2px;
-      padding-left: 40px;
-      font-size: 1.2rem;
-      color: #659b6c;
+          }
+          .ScaredButton{
+
+          }
+        }
+      }
     }
+    .ResourceButtons{
 
     a:link,
     a:visited {
@@ -70,14 +53,80 @@ body {
       transform: scale(1.1);
       box-shadow: 1px 4px 5px rgb(172, 172, 172);
     }
-
-    .MoreResources {
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      align-items: center;
+    .CenterButtons{
+      
+    }
     }
   }
+  //   display: flex;
+  //   flex-direction: column;
+  //   margin-top: 40px;
+
+  //   .Moods {
+  //     display: flex;
+  //     flex-direction: column;
+  //     width: 80%;
+  //   }
+
+  //   .MoodsTop {
+  //     display: flex;
+  //     justify-content: center;
+  //     margin-top: 80px;
+  //     margin-bottom: 30px;
+  //   }
+
+  //   .MoodsBottom {
+  //     display: flex;
+  //     justify-content: center;
+  //     margin-bottom: 50px;
+  //   }
+
+  //   .MoodBox {
+  //     padding: 20px;
+  //     height: 100px;
+  //     width: 100px;
+  //   }
+
+  //   .Mood {
+  //     width: 190px;
+  //     height: 150px;
+  //   }
+
+  //   h2 {
+  //     margin-top: -2px;
+  //     padding-left: 40px;
+  //     font-size: 1.2rem;
+  //     color: #659b6c;
+  //   }
+
+    // a:link,
+    // a:visited {
+    //   background-color: #6259a1;
+    //   color: white;
+    //   padding: 14px 25px;
+    //   width: auto;
+    //   margin: 10px;
+    //   border-radius: 5px;
+    //   text-align: center;
+    //   text-decoration: none;
+    //   display: inline-block;
+    //   transition: all 0.2s ease-in-out;
+    // }
+
+    // a:hover,
+    // a:active {
+    //   background-color: #4d4580;
+    //   transform: scale(1.1);
+    //   box-shadow: 1px 4px 5px rgb(172, 172, 172);
+    // }
+
+    // .MoreResources {
+    //   display: flex;
+    //   flex-direction: column;
+    //   justify-content: center;
+    //   align-items: center;
+    // }
+  
 
   // NavBar
   .NavBar {
