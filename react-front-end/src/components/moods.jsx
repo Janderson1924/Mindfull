@@ -14,60 +14,60 @@ const Moods = (props) => {
       <article className="MoodsPage">
         <section className="MoodsCard">
           <div className="SingleMood">
-            <input
-              className="PandaImage"
-              type="image"
-              src={require("../images/newPanda.png")}
-              alt="DepressedPanda"
-            />
-            <button
+          <button
               value="Depressed"
               onClick={handleClick}
-              className="DepressedButton"
+              className="gradient-button gradient-button-1"
             >
               Depressed
             </button>
-          </div>
-          <div className="SingleMood">
             <input
               className="PandaImage"
               type="image"
-              src={require("../images/newPanda.png")}
-              alt="AnxiousPanda"
-            />
-            <button
+              src={require("../images/Depressed.png")}
+              alt="DepressedPanda"
+            />           
+          </div>
+          <div className="SingleMood">
+          <button
               value="Anxious"
               onClick={handleClick}
-              className="AnxiousButton"
+              className="gradient-button gradient-button-2"
             >
               Anxious
             </button>
-          </div>
-          <div className="SingleMood">
             <input
               className="PandaImage"
               type="image"
-              src={require("../images/newPanda.png")}
-              alt="AngryPanda"
+              src={require("../images/Anxious.png")}
+              alt="AnxiousPanda"
             />
-            <button value="Angry" onClick={handleClick} className="AngryButton">
+          </div>
+          <div className="SingleMood">
+          <button value="Angry" onClick={handleClick} className="gradient-button gradient-button-3">
               Angry
             </button>
-          </div>
-          <div className="SingleMood">
             <input
               className="PandaImage"
               type="image"
-              src={require("../images/newPanda.png")}
-              alt="ScaredPanda"
-            />
-            <button
+              src={require("../images/Angry.png")}
+              alt="AngryPanda"
+            />          
+          </div>
+          <div className="SingleMood">
+          <button
               value="Scared"
               onClick={handleClick}
-              className="ScaredButton"
+              className="gradient-button gradient-button-4"
             >
               Scared
             </button>
+            <input
+              className="PandaImage"
+              type="image"
+              src={require("../images/Scared.png")}
+              alt="ScaredPanda"
+            />
           </div>
         </section>
         <section className="ResourceButtons">
