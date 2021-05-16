@@ -290,6 +290,7 @@ body {
     }
     .UserName {
       margin-top: -5px;
+      color: #659b6c;
     }
     .EditIcon {
       padding-left: 10px;
@@ -318,6 +319,7 @@ body {
 
     h3 {
       text-align: center;
+      color: #659b6c;
     }
 
     h4 {
@@ -475,26 +477,22 @@ body {
   .HomeAnimation {
     padding-top: 10px;
     h1 {
+      text-align: center;
       color: #659b6c;
       font-size: 3.5rem;
-
-      margin-top: 0;
       position: absolute;
-      right: 90px;
+      width: 93%;
       top: 90px;
-      padding-bottom: 2px;
       letter-spacing: 5px;
     }
     h3 {
       color: #659b6c;
       font-size: 2rem;
-
-      margin-top: 0;
       position: absolute;
-      right: 100px;
-      width: 200px;
-      bottom: 110px;
+      width: 89%;
+      bottom: 80px;
       opacity: 0.8;
+      text-align: center;
     }
   }
 
