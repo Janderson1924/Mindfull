@@ -13,10 +13,15 @@ body {
 
   // Home Page
   .MoodsPage {
+    .ArrowIcon {
+      width: 100%;
+      color: #659b6c;
+      font-size: 1.4rem;
+    }
     h2 {
       color: #659b6c;
     }
-    margin-top: 125px;
+    margin-top: 105px;
     .MoodsCard {
       .SingleMood {
         display: flex;
@@ -104,18 +109,18 @@ body {
       }
     }
     hr {
-      margin: 10% 15% 5% 15%;
+      margin: 5% 5% 2% 5%;
     }
     .ResourceButtons {
       display: flex;
       flex-direction: column;
       justify-content: space-around;
-      text-align: center;
+      // text-align: center;
       width: 100%;
 
       h2 {
         color: #659b6c;
-        margin: 5% 25%;
+        // margin: 5%;
       }
 
       a:link,
@@ -124,10 +129,9 @@ body {
         background-color: #aa94cc;
         color: white;
         width: 90%;
-        height: 100%;
+        height: 60%;
         padding: 5px 15px;
         font-size: 16px;
-        margin: 0 0 5px 0;
         border-radius: 10px;
         text-align: center;
         border: 2px solid white;
@@ -140,7 +144,7 @@ body {
       a:hover,
       a:active {
         background-color: #4d4580;
-        transform: scale(1.1);
+        transform: scale(1.03);
         box-shadow: 1px 4px 5px rgb(172, 172, 172);
       }
       .CenterButtons {
@@ -158,10 +162,9 @@ body {
         }
       }
       .BottomButton {
-        padding-top: 10px;
         padding-bottom: 10px;
         margin-top: 12px;
-        height: 40px;
+        height: auto;
       }
       .TopButton {
         margin-bottom: 7px;

@@ -1,6 +1,8 @@
 import React from "react";
 import { useHistory } from "react-router-dom";
 import MenuAppBar from "./navbar";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faAngleDoubleDown } from "@fortawesome/free-solid-svg-icons";
 
 const Moods = (props) => {
   const history = useHistory();
@@ -75,6 +77,7 @@ const Moods = (props) => {
             />
           </div>
         </section>
+        <FontAwesomeIcon className="ArrowIcon" icon={faAngleDoubleDown} />
         <hr />
         <section className="ResourceButtons">
           <h2>more resources</h2>
