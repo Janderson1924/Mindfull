@@ -4,7 +4,9 @@ const db = require("../lib/db");
 
 // GET route to show users notes
 router.get("/notes", (req, res) => {
-  db.query(`SELECT * FROM posts WHERE posts.user_id = 1;`)
+  db.query(
+    `SELECT * FROM posts WHERE posts.user_id = 1 ORDER BY posts.id DESC;`
+  )
     .then((data) => {
       res.json(data.rows);
       // console.log("222222", data.rows)

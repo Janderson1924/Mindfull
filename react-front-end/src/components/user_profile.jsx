@@ -15,11 +15,8 @@ const UserProfile = (props) => {
       <MenuAppBar />
       <article className="UserProfile">
         <NameAndPhoto
-          name={"Example Panda"}
+          name={"hiroki"}
           imgSrc={require("../images/newPanda.png")}
-          onEdit={() => {
-            alert("Edit");
-          }}
         />
         <hr />
         <MyResources
@@ -62,11 +59,6 @@ const NameAndPhoto = (props) => {
       />
       <div className="NameAndEdit">
         <h2 className="UserName">{props.name} </h2>
-        <FontAwesomeIcon
-          onClick={props.onEdit}
-          className="EditIcon"
-          icon={faEdit}
-        />
       </div>
     </div>
   );
@@ -102,7 +94,7 @@ const MyResources = (props) => {
 
   return (
     <div className="Resource">
-      <h3>My Resources</h3>
+      <h3>- my favourites -</h3>
       <div>{/* Render Resource Box From Resource Page */}</div>
       {favourited &&
         favourited.map((favourite) => {
@@ -110,13 +102,13 @@ const MyResources = (props) => {
             <section className="ResourceBox" key={favourite.id}>
               <h4>{favourite.title}</h4>
               <h6>{favourite.category}</h6>
-              <h5>{favourite.description}</h5>
+              {/* <h5>{favourite.content}</h5> */}
               <a
                 href={favourite.link}
                 target="_blank"
                 rel="noopener noreferrer"
               >
-                Find Out More
+                click me
               </a>
               <FontAwesomeIcon
                 onClick={() => {
@@ -148,7 +140,10 @@ const NewNote = (props) => {
 
   return (
     <div>
-      <h3>My Wall</h3>
+      <h3>
+        leave yourself a note{" "}
+        <FontAwesomeIcon className="PencilIcon" icon={faPencilAlt} />
+      </h3>
       <label htmlFor="inp" className="inp">
         <input
           type="text"
@@ -157,15 +152,12 @@ const NewNote = (props) => {
             setPostReg(e.target.value);
           }}
         ></input>
-        <span className="label">
-          Write A New Note{" "}
-          <FontAwesomeIcon className="PencilIcon" icon={faPencilAlt} />
-        </span>
+        <span className="label"> </span>
         <span className="focus-bg"></span>
+        <button onClick={wall} className="SubmitNote" type="submit">
+          submit
+        </button>
       </label>
-      <button onClick={wall} className="SubmitNote" type="submit">
-        Submit
-      </button>
     </div>
   );
 };
@@ -194,19 +186,15 @@ const PostedNote = (props) => {
 
   return (
     <div className="PostedNote">
-      <h3>My Notes</h3>
       {notes &&
         notes.map((note) => {
           return (
             <section className="Notes" key={note.id}>
               <p>{note.body}</p>
-              <p>{note.time_stamp}</p>
               <div className="EditTrashIcon">
-                <FontAwesomeIcon
-                  onClick={props.onEdit}
-                  className="EditIcon"
-                  icon={faEdit}
-                />
+                <p>
+                  <em>{note.time_stamp}</em>
+                </p>
                 <FontAwesomeIcon
                   onClick={() => deleteNote(note.id)}
                   className="TrashIcon"
@@ -221,5 +209,3 @@ const PostedNote = (props) => {
 };
 
 export default UserProfile;
-{
-}

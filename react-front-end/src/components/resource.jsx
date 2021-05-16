@@ -37,12 +37,13 @@ const Resource = (props) => {
     <>
       <MenuAppBar />
       <div className="Resources">
+        <h1>find help below</h1>
         {resources &&
           resources.map((resource) => {
             return (
               <div className="resource" key={resource.id}>
-                <h1 className="Title">- {resource.title} -</h1>
-                <h3>{resource.category}</h3>
+                <h1 className="Title">{resource.title}</h1>
+                {/* <h3>{resource.category}</h3> */}
                 <h3 className="Description">{resource.content} </h3>
                 <button>
                   <a href={resource.link} target="_blank">
@@ -54,7 +55,7 @@ const Resource = (props) => {
                     toggleFavourited(resource.id);
                   }}
                   className="Heart"
-                  style={{ color: resource.favourited ? "red" : "white" }}
+                  style={{ color: resource.favourited ? "#ec9393" : "white" }}
                   icon={faHeart}
                 />
               </div>
