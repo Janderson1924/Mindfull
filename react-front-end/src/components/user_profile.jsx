@@ -2,6 +2,7 @@ import React, { useEffect, useState } from "react";
 import axios from "axios";
 import MenuAppBar from "./navbar";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { format, formatDistance } from "date-fns";
 import {
   faEdit,
   faHeart,
@@ -193,7 +194,7 @@ const PostedNote = (props) => {
               <p>{note.body}</p>
               <div className="EditTrashIcon">
                 <p>
-                  <em>{note.time_stamp}</em>
+                  <em>{format(new Date(note.time_stamp), "dd-MM-yyyy")}</em>
                 </p>
                 <FontAwesomeIcon
                   onClick={() => deleteNote(note.id)}
