@@ -200,7 +200,7 @@ body {
 
   //Chosen Resource
   .Resources {
-    margin-top: 110px;
+    margin-top: 100px;
 
     .resource {
       display: flex;
@@ -220,14 +220,14 @@ body {
 
     h1 {
       color: #659b6c;
-      font-size: 2rem;
+      font-size: 1.5rem;
       width: 70%;
-      margin-left: 13%;
-      text-align: center;
       padding: 5px;
     }
 
     .Title {
+      margin-left: 13%;
+      text-align: center;
       color: #659b6c;
       font-size: 1.5rem;
       border-bottom: 1px solid #659b6c;
@@ -301,6 +301,7 @@ body {
 
     hr {
       width: 70%;
+      margin-top: 10%;
     }
 
     .ResourceBox {
@@ -361,6 +362,7 @@ body {
     }
     .NewNote {
       margin-left: 40px;
+      margin-bottom: -20px;
       width: 70%;
     }
     .inp {
@@ -376,10 +378,14 @@ body {
         text-decoration: none;
         border-color: #659b6c;
         color: white;
-
+        font-size: 95%;
+        text-align: center;
         margin-top: 2%;
-        margin-left: 83%;
-        border-radius: 5px;
+        margin-left: 80%;
+        padding: 3px;
+        margin-right: 0.5%;
+        border-radius: 10px;
+        box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.205);
       }
 
       .label {
@@ -405,10 +411,10 @@ body {
       input {
         -webkit-appearance: none;
         appearance: none;
-        width: 99%;
+        width: 96%;
         border: 0;
         font-family: inherit;
-        padding: 16px 0 16px 0;
+        padding: 16px 0 16px 10px;
         height: 56px;
         font-size: 16px;
         border: 2px solid #659b6c;
@@ -436,39 +442,43 @@ body {
         font-size: 1rem;
       }
     }
-    .Notes {
-      display: flex;
-      flex-direction: column;
-      width: 98%;
-      margin-right: 5%;
-      margin-top: 10px;
-      // margin-bottom: 30px;
-      padding-bottom: 1px;
-      height: auto;
-      background-color: #aa94cc;
-      border: 3px solid #f9f1f1;
-      color: white;
+    .PostedNote {
+      margin-top: 8%;
 
-      border-radius: 10px;
-      box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.137);
-    }
-    p {
-      margin-left: 2%;
-      font-size: 1.3rem;
-    }
-    .EditTrashIcon {
-      display: flex;
-      flex-direction: row;
-      // margin-left: 80%;
-      // margin-bottom: -10px;
-      p {
-        width: 90%;
-        margin-left: 2%;
-        font-size: 0.8rem;
+      .Notes {
+        display: flex;
+        flex-direction: column;
+        width: 98%;
+        margin-right: 5%;
+        margin-top: 10px;
+        // margin-bottom: 30px;
+        padding-bottom: 1px;
+        height: auto;
+        background-color: #aa94cc;
+        border: 3px solid #f9f1f1;
+        color: white;
+
+        border-radius: 10px;
+        box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.137);
       }
-      .TrashIcon {
-        margin: 5px;
-        padding-top: 10px;
+      p {
+        margin-left: 2%;
+        font-size: 1.3rem;
+      }
+      .EditTrashIcon {
+        display: flex;
+        flex-direction: row;
+        // margin-left: 80%;
+        // margin-bottom: -10px;
+        p {
+          width: 90%;
+          margin-left: 2%;
+          font-size: 0.8rem;
+        }
+        .TrashIcon {
+          margin: 5px;
+          padding-top: 10px;
+        }
       }
     }
   }

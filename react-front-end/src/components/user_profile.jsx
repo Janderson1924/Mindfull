@@ -154,9 +154,9 @@ const NewNote = (props) => {
         ></input>
         <span className="label"> </span>
         <span className="focus-bg"></span>
-        <button onClick={wall} className="SubmitNote" type="submit">
+        <div onClick={wall} className="SubmitNote" type="submit">
           submit
-        </button>
+        </div>
       </label>
     </div>
   );

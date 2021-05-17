@@ -37,7 +37,7 @@ const Resource = (props) => {
     <>
       <MenuAppBar />
       <div className="Resources">
-        <h1>find help below</h1>
+        <h1>find help below...</h1>
         {resources &&
           resources.map((resource) => {
             return (
