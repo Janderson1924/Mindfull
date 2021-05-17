@@ -168,6 +168,17 @@ body {
       }
       .TopButton {
         margin-bottom: 7px;
+        a {
+          p {
+            margin-top: 0;
+          }
+          h3 {
+            border-bottom: 1px solid white;
+            padding-bottom: 5px;
+            width: 80%;
+            margin-left: 10%;
+          }
+        }
       }
     }
   }
@@ -207,7 +218,7 @@ body {
       display: flex;
       flex-direction: column;
       flex-wrap: wrap;
-      width: 100%;
+      width: 98%;
       // margin-left: 38px;
       box-shadow: 1px 2px 8px rgba(0, 0, 0, 0.336);
       margin-top: 20px;
@@ -287,7 +298,8 @@ body {
     }
     .NameAndEdit {
       // display: flex;
-      margin-left: 23%;
+      margin-left: 12%;
+      margin-top: 5%;
     }
     .UserName {
       margin-top: -5px;
@@ -302,7 +314,7 @@ body {
 
     hr {
       width: 70%;
-      margin-top: 10%;
+      margin-top: 5%;
     }
 
     .ResourceBox {

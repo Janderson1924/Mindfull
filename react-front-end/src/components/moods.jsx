@@ -83,8 +83,8 @@ const Moods = (props) => {
           <h2>more resources</h2>
           <div className="TopButton">
             <a href={props.newsArticle[1]} target="_blank">
-              <p>Inspiring Articles..</p>
-              <p>{props.newsArticle[0]}</p>
+              <h3>Inspiring Articles</h3>
+              <p>{`"${props.newsArticle[0]}"`}</p>
             </a>
           </div>
           <div className="CenterButtons">

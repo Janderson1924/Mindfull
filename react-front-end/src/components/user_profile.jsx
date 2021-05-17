@@ -15,7 +15,7 @@ const UserProfile = (props) => {
       <MenuAppBar />
       <article className="UserProfile">
         <NameAndPhoto
-          name={"hiroki"}
+          name={"Andy Nally"}
           imgSrc={require("../images/newPanda.png")}
         />
         <hr />
@@ -193,7 +193,12 @@ const PostedNote = (props) => {
               <p>{note.body}</p>
               <div className="EditTrashIcon">
                 <p>
-                  <em>{format(new Date(note.time_stamp), "dd-MM-yyyy")}</em>
+                  <em>
+                    {`${formatDistance(
+                      new Date(note.created_at),
+                      new Date()
+                    )} ago`}
+                  </em>
                 </p>
                 <FontAwesomeIcon
                   onClick={() => deleteNote(note.id)}
