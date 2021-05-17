@@ -194,7 +194,7 @@ const PostedNote = (props) => {
               <p>{note.body}</p>
               <div className="EditTrashIcon">
                 <p>
-                  <em>{format(new Date(note.time_stamp), "dd-MM-yyyy")}</em>
+                  <em>{format(new Date(note.time_stamp), "dd/MM/yyyy")}</em>
                 </p>
                 <FontAwesomeIcon
                   onClick={() => deleteNote(note.id)}

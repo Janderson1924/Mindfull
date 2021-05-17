@@ -190,10 +190,11 @@ body {
       font-size: 1.9rem;
     }
     img {
+      background-color: #bda7dd;
       padding: 3px;
-      border: 3px solid rgba(255, 255, 255, 0.247);
-      border-radius: 50%;
-      margin-top: 7px;
+      border: 3px solid rgba(255, 255, 255, 0.205);
+      border-radius: 35%;
+      margin-top: 15px;
       margin-right: -10px;
     }
   }
@@ -508,43 +509,45 @@ body {
 
   // Meditation Page Animation
   .MeditationAnimation {
-    padding-left: 20px;
     h1 {
       color: #59865f;
       font-size: 3rem;
-
       margin-top: 0;
       position: absolute;
-      right: 120px;
+      right: 100px;
       top: 100px;
       padding-bottom: 2px;
     }
+    img {
+      margin-top: -16%;
+    }
     h3 {
+      display: flex;
+      flex-direction: column;
+      align-content: center;
       color: #659b6c;
       font-size: 1.6rem;
-
-      margin: 0;
-      padding-top: 0px;
       position: absolute;
-      right: 70px;
-      width: 200px;
       bottom: -25px;
       opacity: 0.8;
-      line-height: 30px;
+      width: 95%;
     }
     .Separate {
       display: flex;
       flex-direction: column;
       justify-content: center;
       align-items: center;
-      margin-right: 70px;
+      text-align: center;
       border-bottom: 4px solid #80c289;
       padding-top: 25px;
+      padding-bottom: 8%;
+      width: 80%;
+      margin-left: 30px;
     }
     h2 {
       color: #659b6c;
       font-size: 2rem;
-
+      text-align: center;
       margin: 0;
       position: absolute;
       right: 90px;
@@ -553,15 +556,16 @@ body {
     }
     #timer {
       left: 90px;
-      margin-top: 10px;
+      margin-left: 125px;
       padding-top: 20px;
       font-size: 3rem;
     }
     .Home {
-      margin-left: 200px;
+      color: #b394cc;
+      margin-left: 325px;
       font-size: 2.5rem;
-      opacity: 0.8;
-      margin-bottom: 40px;
+      opacity: 2;
+      margin-bottom: 25px;
     }
   }
 
