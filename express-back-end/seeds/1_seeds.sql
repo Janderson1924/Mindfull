@@ -5,7 +5,7 @@ INSERT INTO users (name, password, email)
 
 -- POSTS TABLE SEEDS
 INSERT INTO posts (body, isDeleted, user_id)
- VALUES ('Im not superstitious, just a little stitious', false, 1);
+ VALUES ('Yesterday was rough.. but finding this app has helped me put all my resources and thoughts in one place! Just keep swimming..', false, 1), ('Wow! Today has already been way better! I have already used so much of the info from these resources in my daily life! Love these journal posts too!', false, 1), ('Heres a quote I loved and wanted to save: "I have had thousands of crises in my life. Most of them never happened."', false, 1);
 
 
 -- RESOURCES TABLE SEEDS
