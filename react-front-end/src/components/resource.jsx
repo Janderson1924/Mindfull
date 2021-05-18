@@ -15,9 +15,7 @@ const Resource = (props) => {
   };
 
   const toggleFavourited = async (id) => {
-    const response = await axios.post(
-      `http://localhost:8080/api/favourites/toggle/${id}`
-    );
+    await axios.post(`http://localhost:8080/api/favourites/toggle/${id}`);
 
     setResources((liveResources) => {
       return liveResources.map((resource) => {
@@ -46,8 +44,12 @@ const Resource = (props) => {
                 {/* <h3>{resource.category}</h3> */}
                 <h3 className="Description">{resource.content} </h3>
                 <button>
-                  <a href={resource.link} target="_blank">
-                    Click Me
+                  <a
+                    href={resource.link}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    click me
                   </a>
                 </button>
                 <FontAwesomeIcon

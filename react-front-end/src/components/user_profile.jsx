@@ -2,7 +2,7 @@ import React, { useEffect, useState } from "react";
 import axios from "axios";
 import MenuAppBar from "./navbar";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { format, formatDistance } from "date-fns";
+import { formatDistance } from "date-fns";
 import {
   faHeart,
   faPencilAlt,
@@ -77,9 +77,7 @@ const MyResources = (props) => {
   // console.log("favourited state", favourited)
 
   const toggleFavourite = async (id) => {
-    const response = await axios.post(
-      `http://localhost:8080/api/favourites/toggle/${id}`
-    );
+    await axios.post(`http://localhost:8080/api/favourites/toggle/${id}`);
 
     setFavourited((liveFavourited) => {
       return liveFavourited.filter((favourite) => {

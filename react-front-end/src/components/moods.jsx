@@ -82,7 +82,11 @@ const Moods = (props) => {
         <section className="ResourceButtons">
           <h2>more resources</h2>
           <div className="TopButton">
-            <a href={props.newsArticle[1]} target="_blank">
+            <a
+              href={props.newsArticle[1]}
+              target="_blank"
+              rel="noopener noreferrer"
+            >
               <h3>Inspiring Articles</h3>
               <p>{`"${props.newsArticle[0]}"`}</p>
             </a>

@@ -1,4 +1,3 @@
-import { Portal } from "@material-ui/core";
 import React from "react";
 import HomeAnimation from "./home_animation";
 

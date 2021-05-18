@@ -67,9 +67,11 @@ class App extends Component {
             <Home />
           </Route>
           <Route exact path="/moods">
-            {this.state.feed[Math.floor(Math.random() * 4 + 1)] && (
+            {this.state.feed[Math.floor(Math.random() * 10 + 1)] && (
               <Moods
-                newsArticle={this.state.feed[Math.floor(Math.random() * 4 + 1)]}
+                newsArticle={
+                  this.state.feed[Math.floor(Math.random() * 10 + 1)]
+                }
               />
             )}
             {/* <Moods /> */}
