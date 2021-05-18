@@ -2,17 +2,8 @@
 <div align="center">
 <img src="./public/images/mindfull_logo_rounded.png" width="250"/>
 <p>A full-stack mental health resource application</p>
+<p>This application's tech stack includes React, React Router, Express, Postgres, CSS/SASS, HTML</p>
 </div>
-
-<!-- Tech Stack -->
-
-<b>Tech Stack</b>
-
-- React
-- React Router
-- Express
-- Postgres
-- SASS
 
 <!-- INTRODUCTION -->
 
@@ -82,6 +73,8 @@ Set proxy for React project to `localhost:8080` in the `package.json` file, so t
 !["DESCRIPTION OF SCREENSHOT/GIF"](LINK TO PICTURE - COPY LINK ADDRESS FROM FOLDER IN GITHUB)
 !["DESCRIPTION OF SCREENSHOT/GIF"](LINK TO PICTURE - COPY LINK ADDRESS FROM FOLDER IN GITHUB)
 !["DESCRIPTION OF SCREENSHOT/GIF"](LINK TO PICTURE - COPY LINK ADDRESS FROM FOLDER IN GITHUB)
+
+## Dependencies
 
 ## Special Thanks
 
