@@ -1,6 +1,6 @@
 <!-- TITLE -->
 <h1> Mindfull </h1>
-<img src="./public/images/mindfull_logo.png"/>
+<img src="./public/images/mindfull_logo.png" width="100"/>
 <p>A full-stack mental health resource application</p>
 <p>
 Tech Stack
