@@ -1,7 +1,7 @@
 <!-- TITLE -->
 <div align="center">
 <img src="./public/images/mindfull_logo_rounded.png" width="250"/>
-<p>A full-stack mental health resource application</p>
+<p><b>A full-stack mental health resource application</b></p>
 <p>This application's tech stack includes React, React Router, Express, Postgres, CSS/SASS, HTML</p>
 </div>
 
