@@ -1,5 +1,6 @@
 <!-- TITLE -->
 <h1> Mindfull </h1>
+<img src="./public/images/mindfull_logo.png"/>
 <p>A full-stack mental health resource application</p>
 <p>
 Tech Stack
@@ -67,7 +68,7 @@ npm start
 
 5. Visit `http://localhost:3000/` (change from port 3000 in url if react asks) in browser
 
-<p>Tip for Setting up Server</p>
+<b>Tip for Setting up Server</b>
 Set proxy for React project to `localhost:8080` in the `package.json` file, so the Express app listens to port 8080 in `server.js`.
 
 ## Screenshots
