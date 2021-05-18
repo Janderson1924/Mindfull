@@ -2,7 +2,7 @@
 <div align="center">
 <img src="./public/images/mindfull_logo_rounded.png" width="250"/>
 <p><b>A full-stack mental health resource application</b></p>
-<p>This application's tech stack includes React, React Router, Express, Postgres, CSS/SASS, and HTML</p>
+<p>This application's tech stack includes React, Express, PostgreSQL, CSS/SASS, and HTML</p>
 </div>
 
 <!-- INTRODUCTION -->
@@ -13,7 +13,7 @@ Mindfull is a simple, but powerful mental health resource application that allow
 
 <b>** This is a demo build, which is currently only optimized for mobile viewing **</b>
 
-Created by Justin Anderson ([**@janderson1924**](https://github.com/janderson1924)), Luke Bergmann ([**@lukebergmann**](https://github.com/lukebergmann)), and Caden Choi ([**cadenkchoi**](https://github.com/cadenkchoi)).
+Created by Justin Anderson ([**@janderson1924**](https://github.com/janderson1924)), Luke Bergmann ([**@lukebergmann**](https://github.com/lukebergmann)), and Caden Choi ([**@cadenkchoi**](https://github.com/cadenkchoi)).
 
 <!-- FEATURES -->
 
@@ -44,7 +44,7 @@ cd Mindfull/express-back-end
 npm install
 ```
 
-3. Run reset on Postgres database in Express and seed files
+3. Run reset on PostgreSQL database in Express and seed files
 
 ```
 cd Mindfull/express-back-end
@@ -75,6 +75,27 @@ Set proxy for React project to `localhost:8080` in the `package.json` file, so t
 !["DESCRIPTION OF SCREENSHOT/GIF"](LINK TO PICTURE - COPY LINK ADDRESS FROM FOLDER IN GITHUB)
 
 ## Dependencies
+
+Front-End
+
+- React
+- React-router-dom
+- Axios
+- Date-fns
+- Node-sass
+- Rss-parser
+- Font Awesome
+- Material UI
+
+Back-End
+
+- Express
+- Body-parser
+- Cors
+- Dotenv
+- Http-proxy-middleware
+- PostgreSQL
+- Nodemon
 
 ## Special Thanks
 
