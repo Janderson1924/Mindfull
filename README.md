@@ -1,9 +1,7 @@
 <!-- TITLE -->
 <div align="center">
-<img src="./public/images/mindfull_logo.png" width="300"/>
-<h1> Mindfull </h1>
+<img src="./public/images/mindfull_logo.png" width="250"/>
 <p>A full-stack mental health resource application</p>
-</div>
 <p>
 Tech Stack
 
@@ -13,6 +11,7 @@ Tech Stack
 - Postgres
 - SASS
 </p>
+</div>
 
 <!-- INTRODUCTION -->
 
