@@ -1,23 +1,26 @@
 <!-- TITLE -->
 <div align="center">
-<img src="./public/images/mindfull_logo.png" width="250"/>
+<img src="./public/images/mindfull_logo_rounded.png" width="250"/>
 <p>A full-stack mental health resource application</p>
 </div>
-<p>
-Tech Stack
+
+<!-- Tech Stack -->
+
+<b>Tech Stack</b>
 
 - React
 - React Router
 - Express
 - Postgres
 - SASS
-</p>
 
 <!-- INTRODUCTION -->
 
 ## Introduction
 
 Mindfull is a simple, but powerful mental health resource application that allows users to find resources based on how they are feeling in the moment and to help overcome these obstacles.
+
+<b>** This is a demo build, which is currently only optimized for mobile viewing **</b>
 
 Created by Justin Anderson ([**@janderson1924**](https://github.com/janderson1924)), Luke Bergmann ([**@lukebergmann**](https://github.com/lukebergmann)), and Caden Choi ([**cadenkchoi**](https://github.com/cadenkchoi)).
 
@@ -67,7 +70,8 @@ cd Mindfull/express-back-end
 npm start
 ```
 
-5. Visit `http://localhost:3000/` (change from port 3000 in url if react asks) in browser
+5. Visit `http://localhost:3000/` in browser
+   (change from port 3000 in url if react asks)
 
 <b>Tip for Setting up Server</b>
 Set proxy for React project to `localhost:8080` in the `package.json` file, so the Express app listens to port 8080 in `server.js`.
