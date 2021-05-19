@@ -27,9 +27,20 @@ Created by Justin Anderson ([**@janderson1924**](https://github.com/janderson192
 
 ## Screenshots
 
+#### Landing Page
+
 !["Landing Page"](https://github.com/cadenkchoi/Mindfull/blob/master/public/images/landing_page.gif?raw=true)
+
+#### Moods and Resources Pages
+
 !["Moods and Resources Pages"](https://github.com/cadenkchoi/Mindfull/blob/master/public/images/mood_resource.gif?raw=true)
+
+#### Profile Page
+
 !["Profile Page"](https://github.com/cadenkchoi/Mindfull/blob/master/public/images/profile_page.gif?raw=true)
+
+#### Meditation Page
+
 !["Meditation Page"](https://github.com/cadenkchoi/Mindfull/blob/master/public/images/meditating.gif?raw=true)
 
 <!-- INSTALLATION -->
