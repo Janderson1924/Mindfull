@@ -9,7 +9,7 @@
 
 ## Introduction
 
-Mindfull is a simple, but powerful mental health resource application that allows users to find resources based on how they are feeling in the moment and to help overcome these obstacles.
+mindfull is a simple, but powerful mental health resource application that allows users to find resources based on how they are feeling in the moment and to help overcome these obstacles.
 
 <b>** This is a demo build, which is currently only optimized for mobile viewing **</b>
 
