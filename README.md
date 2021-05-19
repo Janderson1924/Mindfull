@@ -27,9 +27,11 @@ Created by Justin Anderson ([**@janderson1924**](https://github.com/janderson192
 
 ## Screenshots
 
-### Order (Top Left: Landing Page, Top Right: Moods and Resources Page, Bottom Left: Profile Page, Bottom Right: Meditation Page)
+### Order
 
-["Landing Page"](https://github.com/cadenkchoi/Mindfull/blob/master/public/images/landing_page.gif?raw=true)
+##### Top Left: Landing Page, Top Right: Moods and Resources Page, Bottom Left: Profile Page, Bottom Right: Meditation Page
+
+!["Landing Page"](https://github.com/cadenkchoi/Mindfull/blob/master/public/images/landing_page.gif?raw=true)
 !["Moods and Resources Pages"](https://github.com/cadenkchoi/Mindfull/blob/master/public/images/mood_resource.gif?raw=true)
 !["Profile Page"](https://github.com/cadenkchoi/Mindfull/blob/master/public/images/profile_page.gif?raw=true)
 !["Meditation Page"](https://github.com/cadenkchoi/Mindfull/blob/master/public/images/meditating.gif?raw=true)
