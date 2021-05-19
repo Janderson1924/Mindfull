@@ -24,7 +24,7 @@ CREATE TABLE resources (
   title VARCHAR(255) NOT NULL,
   category VARCHAR(255) NOT NULL,
   link VARCHAR(255) NOT NULL,
-  content VARCHAR(255) NOT NULL,  /* description */
+  content VARCHAR(255) NOT NULL,  /* resource description */
   favourited BOOLEAN NOT NULL DEFAULT FALSE
 );
 

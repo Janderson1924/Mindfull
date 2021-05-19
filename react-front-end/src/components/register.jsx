@@ -8,7 +8,6 @@ const Register = (props) => {
   const [nameReg, setNameReg] = useState("");
 
   const reg = () => {
-    console.log("test", nameReg);
     axios
       .post("http://localhost:3002/api/users/register", {
         name: nameReg,

@@ -41,7 +41,6 @@ const Resource = (props) => {
             return (
               <div className="resource" key={resource.id}>
                 <h1 className="Title">{resource.title}</h1>
-                {/* <h3>{resource.category}</h3> */}
                 <h3 className="Description">{resource.content} </h3>
                 <button>
                   <a

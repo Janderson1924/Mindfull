@@ -9,7 +9,7 @@
 
 ## Introduction
 
-Mindfull is a simple, but powerful mental health resource application that allows users to find resources based on how they are feeling in the moment and to help overcome these obstacles.
+mindfull is a simple, yet powerful mental health resource application that allows users to find resources based on how they are feeling in the moment and to help overcome these obstacles.
 
 <b>** This is a demo build, which is currently only optimized for mobile viewing **</b>
 
@@ -67,7 +67,13 @@ psql \i migrations/1_schema.sql
 \i seeds/1_seeds.sql
 ```
 
-4. Open two terminal windows and launch both React and Express Servers
+4. Click this link to temporarily unlock access to this demo build
+
+```
+https://cors-anywhere.herokuapp.com/corsdemo
+```
+
+5. Open two terminal windows and launch both React and Express Servers
 
 ```
 cd Mindfull/react-front-end
@@ -76,7 +82,7 @@ cd Mindfull/express-back-end
 npm start
 ```
 
-5. Visit `http://localhost:3000/` in browser
+6. Visit `http://localhost:3000/` in browser
    (change from port 3000 in url if react asks)
 
 <b>Tip for Setting up Server</b>

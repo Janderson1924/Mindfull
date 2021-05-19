@@ -9,7 +9,6 @@ router.get("/notes", (req, res) => {
   )
     .then((data) => {
       res.json(data.rows);
-      // console.log("222222", data.rows)
     })
     .catch((err) => {
       res.status(500, "Could Not Complete Request");
@@ -18,7 +17,6 @@ router.get("/notes", (req, res) => {
 
 // POST route to submit a new note
 router.post("/profile/create", (req, res) => {
-  console.log(req.body);
   db.query(`INSERT INTO posts (body, user_id) VALUES ($1, $2)`, [
     req.body.body,
     1,
@@ -29,11 +27,9 @@ router.post("/profile/create", (req, res) => {
 
 // DELETE route to delete a note
 router.delete("/notes/delete/:id", (req, res) => {
-  // console.log("DELETE QUERY", req.params)
   db.query(`DELETE FROM posts WHERE posts.id = $1`, [req.params.id]).then(
     (data) => {
       res.json(data.rows);
-      console.log("DELETED", data.rows);
     }
   );
 });

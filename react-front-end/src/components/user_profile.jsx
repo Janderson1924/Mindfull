@@ -71,10 +71,8 @@ const MyResources = (props) => {
     const response = await axios.get(
       `http://localhost:8080/api/favourites/favourited/`
     );
-    console.log("MYRE", response);
     setFavourited(response.data);
   };
-  // console.log("favourited state", favourited)
 
   const toggleFavourite = async (id) => {
     await axios.post(`http://localhost:8080/api/favourites/toggle/${id}`);
@@ -93,14 +91,12 @@ const MyResources = (props) => {
   return (
     <div className="Resource">
       <h3>- my favourites -</h3>
-      <div>{/* Render Resource Box From Resource Page */}</div>
       {favourited &&
         favourited.map((favourite) => {
           return (
             <section className="ResourceBox" key={favourite.id}>
               <h4>{favourite.title}</h4>
               <h6>{favourite.category}</h6>
-              {/* <h5>{favourite.content}</h5> */}
               <a
                 href={favourite.link}
                 target="_blank"
@@ -126,7 +122,6 @@ const NewNote = (props) => {
   const [postReg, setPostReg] = useState("");
 
   const wall = () => {
-    // console.log('wall test', postReg)
     axios
       .post("http://localhost:8080/api/posts/profile/create", {
         body: postReg,
@@ -162,12 +157,9 @@ const NewNote = (props) => {
 
 const PostedNote = (props) => {
   const [notes, setNotes] = useState(null);
-  // console.log("NOTES11", notes)
   const fetchNotes = async () => {
     const response = await axios.get(`http://localhost:8080/api/posts/notes`);
-    // console.log("NOTES", response)
     setNotes(response.data);
-    // console.log("NOTES DATA", response.data)
   };
 
   const deleteNote = (id) => {
