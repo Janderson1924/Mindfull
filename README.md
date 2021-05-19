@@ -1,7 +1,7 @@
 <!-- TITLE -->
 <div align="center">
 <img src="./public/images/mindfull_logo_rounded.png" width="250"/>
-<p><b>A full-stack mental health resource application</b></p>
+<p><b>Mental health resource application</b></p>
 <p>This application's tech stack includes React, Express, PostgreSQL, CSS/SASS, and HTML</p>
 </div>
 
@@ -13,17 +13,21 @@ Mindfull is a simple, but powerful mental health resource application that allow
 
 <b>** This is a demo build, which is currently only optimized for mobile viewing **</b>
 
-Created by Justin Anderson ([**@janderson1924**](https://github.com/janderson1924)), Luke Bergmann ([**@lukebergmann**](https://github.com/lukebergmann)), and Caden Choi ([**@cadenkchoi**](https://github.com/cadenkchoi)).
+Full-stack application created by Justin Anderson ([**@janderson1924**](https://github.com/janderson1924)), Luke Bergmann ([**@lukebergmann**](https://github.com/lukebergmann)), and Caden Choi ([**@cadenkchoi**](https://github.com/cadenkchoi)).
 
 <!-- FEATURES -->
 
 ## Features
 
-- List of moods, when selected show resources for each mood
-- Ability to favourite/unfavourite resources
-- Meditation page with 10 minute timer
-- **Profile page**: View favourited resources, and journalling wall where you can post/delete notes for yourself
-- **More Resources**: Has links to BetterHelp, GoodNewsNetwork, and RSS Feed from GoodNewsNetwork that links to Inspiring Articles
+- Any visitor has access to
+  - Resources on resource pages
+  - BetterHelp for counselling
+  - GoodNewsNetwork for inspiring news and articles
+  - Meditation feature
+- Registered users also have access to
+  - Profile page
+  - Favouriting/unfavouriting resources
+  - Journalling wall where you can post notes and quotes
 
 ## Screenshots
 
@@ -31,7 +35,7 @@ Created by Justin Anderson ([**@janderson1924**](https://github.com/janderson192
 
 ##### Top Left: Landing Page, Top Right: Moods and Resources Page, Bottom Left: Profile Page, Bottom Right: Meditation Page
 
-!["Landing Page"](https://github.com/cadenkchoi/Mindfull/blob/master/public/images/landing_page.gif?raw=true)
+!["Landing Page"](https://github.com/cadenkchoi/Mindfull/blob/master/public/images/landing_page2.gif?raw=true)
 !["Moods and Resources Pages"](https://github.com/cadenkchoi/Mindfull/blob/master/public/images/mood_resource.gif?raw=true)
 !["Profile Page"](https://github.com/cadenkchoi/Mindfull/blob/master/public/images/profile_page.gif?raw=true)
 !["Meditation Page"](https://github.com/cadenkchoi/Mindfull/blob/master/public/images/meditating.gif?raw=true)
@@ -40,7 +44,7 @@ Created by Justin Anderson ([**@janderson1924**](https://github.com/janderson192
 
 ## Installation
 
-1. Close or download the respository
+1. Clone or download the respository
 
 ```
 git clone https://github.com/cadenkchoi/Mindfull.git

@@ -503,20 +503,23 @@ body {
     padding-top: 10px;
     h1 {
       text-align: center;
-      color: #659b6c;
-      font-size: 3.5rem;
+      color: #f9f1f1;
+      font-size: 4rem;
       position: absolute;
-      width: 93%;
-      top: 90px;
+      width: 87%;
+      top: 70px;
       letter-spacing: 5px;
+      font-family: "Pacifico", cursive;
+      text-shadow: 3.5px 3.5px 1px #96b89a;
     }
     h3 {
       color: #659b6c;
       font-size: 2rem;
       position: absolute;
-      width: 89%;
+      width: 60%;
       bottom: 80px;
       opacity: 0.8;
+      margin-left: 15%;
       text-align: center;
     }
   }

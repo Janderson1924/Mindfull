@@ -15,7 +15,7 @@ const HomeAnimation = (props) => {
         width="375"
         height="736"
       ></img>
-      <h3>Tap Anywhere To Enter</h3>
+      <h3>tap anywhere to enter</h3>
     </div>
   );
 };
