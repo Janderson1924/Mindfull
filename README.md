@@ -27,9 +27,7 @@ Created by Justin Anderson ([**@janderson1924**](https://github.com/janderson192
 
 ## Screenshots
 
-#### Landing Page
-
-!["Landing Page"](https://github.com/cadenkchoi/Mindfull/blob/master/public/images/landing_page.gif?raw=true)
+#### Landing Page !["Landing Page"](https://github.com/cadenkchoi/Mindfull/blob/master/public/images/landing_page.gif?raw=true)
 
 #### Moods and Resources Pages
 
