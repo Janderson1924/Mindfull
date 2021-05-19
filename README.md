@@ -25,6 +25,13 @@ Created by Justin Anderson ([**@janderson1924**](https://github.com/janderson192
 - **Profile page**: View favourited resources, and journalling wall where you can post/delete notes for yourself
 - **More Resources**: Has links to BetterHelp, GoodNewsNetwork, and RSS Feed from GoodNewsNetwork that links to Inspiring Articles
 
+## Screenshots
+
+!["Landing Page"](https://github.com/cadenkchoi/Mindfull/blob/master/public/images/landing_page.gif?raw=true)
+!["Moods and Resources Pages"](https://github.com/cadenkchoi/Mindfull/blob/master/public/images/mood_resource.gif?raw=true)
+!["Profile Page"](https://github.com/cadenkchoi/Mindfull/blob/master/public/images/profile_page.gif?raw=true)
+!["Meditation Page"](https://github.com/cadenkchoi/Mindfull/blob/master/public/images/meditating.gif?raw=true)
+
 <!-- INSTALLATION -->
 
 ## Installation
@@ -66,13 +73,6 @@ npm start
 
 <b>Tip for Setting up Server</b>
 Set proxy for React project to `localhost:8080` in the `package.json` file, so the Express app listens to port 8080 in `server.js`.
-
-## Screenshots
-
-!["DESCRIPTION OF SCREENSHOT/GIF"](LINK TO PICTURE - COPY LINK ADDRESS FROM FOLDER IN GITHUB)
-!["DESCRIPTION OF SCREENSHOT/GIF"](LINK TO PICTURE - COPY LINK ADDRESS FROM FOLDER IN GITHUB)
-!["DESCRIPTION OF SCREENSHOT/GIF"](LINK TO PICTURE - COPY LINK ADDRESS FROM FOLDER IN GITHUB)
-!["DESCRIPTION OF SCREENSHOT/GIF"](LINK TO PICTURE - COPY LINK ADDRESS FROM FOLDER IN GITHUB)
 
 ## Dependencies
 
