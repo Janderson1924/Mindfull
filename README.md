@@ -63,7 +63,8 @@ npm install
 
 ```
 cd Mindfull/express-back-end
-psql \i migrations/1_schema.sql
+psql
+\i migrations/1_schema.sql
 \i seeds/1_seeds.sql
 ```
 
@@ -83,7 +84,6 @@ npm start
 ```
 
 6. Visit `http://localhost:3000/` in browser
-   (change from port 3000 in url if react asks)
 
 <b>Tip for Setting up Server</b>
 Set proxy for React project to `localhost:8080` in the `package.json` file, so the Express app listens to port 8080 in `server.js`.
