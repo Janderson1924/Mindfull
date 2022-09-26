@@ -47,7 +47,7 @@ Full-stack application created by Justin Anderson ([**@janderson1924**](https://
 1. Clone or download the respository
 
 ```
-$ git clone git@github.com:Janderson1924/Mindfull.git
+git clone git@github.com:Janderson1924/Mindfull.git
 ```
 
 2. Navigate to the project directory and install dependencies for both React and Express
